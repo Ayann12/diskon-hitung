@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diskon Calculator</title>
+    <link rel="icon" href="img/logo.ico" type="image/x-icon">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title mb-4 text-center">
+                    <i class="fas fa-percentage"></i> Sistem Perhitungan Diskon
+                </h2>
+                <form id="discountForm">
+                    <div class="form-group">
+                        <label for="originalPrice">Harga Asli:</label>
+                        <input type="number" class="form-control" id="originalPrice" placeholder="Masukkan harga asli">
+                    </div>
+                    <div class="form-group">
+                        <label for="discount">Pilih Diskon:</label>
+                        <select class="form-control" id="discount">
+                            <option value="0">Pilih Diskon</option>
+                            <option value="10">10%</option>
+                            <option value="20">20%</option>
+                            <option value="30">30%</option>
+                            <option value="40">40%</option>
+                            <option value="50">50%</option>
+                            <option value="60">60%</option>
+                            <option value="70">70%</option>
+                            <option value="80">80%</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-block"
+                        onclick="calculateDiscount()">Hitung</button>
+                </form>
+                <div class="mt-4 text-center">
+                    <h4>Harga Setelah Diskon: <span id="finalPrice">-</span></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
